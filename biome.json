@@ -1,7 +1,7 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.2.2/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.5.1/schema.json",
   "files": {
-    "includes": ["src/**", "*.{js,ts,json}", "!src/routeTree.gen.ts"]
+    "includes": ["src/**", "*.{js,ts,json}", "!src/routeTree.gen.ts", "!src/components/ui/*", "!src/components/motion-primitives/*"]
   },
   "vcs": {
     "enabled": true,
@@ -16,6 +16,12 @@
         "noUnusedTemplateLiteral": "warn",
         "noUselessElse": "warn",
         "useSelfClosingElements": "warn"
+      },
+      "correctness": {
+        "noUnusedImports": {
+          "fix": "safe",
+          "level": "error"
+        }
       }
     }
   },
@@ -40,6 +46,9 @@
     },
     "linter": {
       "enabled": true
+    },
+    "parser": {
+      "tailwindDirectives": true
     }
   }
 }
