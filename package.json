@@ -56,7 +56,7 @@
     "postcss": "^8.5.4",
     "react-scan": "^0.5.7",
     "tailwindcss": "^4.3.2",
-    "typescript": "^6.0.3",
+    "typescript": "7.0.1-rc",
     "vite": "^8.1.0"
   }
 }
